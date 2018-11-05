@@ -203,9 +203,14 @@ h1 {
   text-decoration: none;
 }
 
+.footer i {
+  font-size: 27px;
+  margin-left: 20px;
+}
+
 .footer a:hover {
   color: #d2e2e2;
-  transform: scale(1.2) skewY(4deg);
+  transform: scale(1.15) skewY(1deg);
 }
 
 /* Contact Form */
