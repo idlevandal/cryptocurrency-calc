@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="img/Calculator-icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,500|Roboto:300,400|Orbitron:400" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cryptocurrency Calculator</title>
+    <meta name="description" content="Cryptocurrency crypto profit loss calculator.">
+
+
+</head>
+
+<body>
+    <div class="banner">
+        <p>Cryptocurrency Profit-Loss Calculator</p>
+    </div>
+    <div class="content">
+        <header class="header">
+            <h1 class="h1">Crypto Calculator</h1>
+            <div class="header__images">
+                <img src="img/bch@2x.png" alt="bitcoin">
+                <img src="img/eth@2x.png" alt="ethereum">
+                <img src="img/edoge@2x.png" alt="dodge">
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div class="input">
+                <input type="number" class="inp input__number-of-coins" placeholder="Number of coins" tabindex=1>
+                <input type="number" class="inp input__buy-price" placeholder="Buy price per coin" tabindex=2>
+                <div class="input__commission-container">
+                    <input type="number" class="inp input__buy-commission" placeholder="Buy commission (%)" tabindex=3>
+
+                    <select class="input__commission-type">
+                        <option value="percentage" selected>%</option>
+                        <option value="fixed">$</option>
+                    </select>
+                </div>
+
+                <input type="number" class="inp input__sell-price" placeholder="Sell price per coin" tabindex=4>
+                <input type="number" class="inp input__sell-commission" placeholder="Sell commission (%)" tabindex=5>
+                <div class="btns__div">
+                    <button class="input__btn input__btn--calc" tabindex=6>Calculate</button>
+                    <button class="input__btn input__btn--clear" tabindex=7>Clear</button>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="output" id="output__anchor">
+                <!-- <h2 class="h2">Results</h2>
+                <p class="par output__total-buy"></p>
+                <p class="par output__total-sell"></p>
+                <p class="par output__total-com"></p>
+                <p class="par output__profit-loss"></p>
+                <p class="par output__perc-profit-loss"></p> -->
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <span>Copyright &copy; 2018 D@VE</span>
+        <div class="divider"></div>
+        <a href="#">Home</a>
+        <a href="contact.html">Contact</a>
+        <!-- <a href="#">Help</a> -->
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
